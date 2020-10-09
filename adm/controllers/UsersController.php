@@ -11,7 +11,7 @@ class UsersController {
 
         $result = $UserModel -> getConsult();
 
-        if($line = $result->fetch()){
+        if($line = $result->fetch_assoc()){
             if($password == $line['password']){
                 $_SESSION['login'] = $line['user'];
                 header('Location:index.php?controller=main&action=index');

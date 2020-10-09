@@ -1,0 +1,19 @@
+.section .container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1.5em;
+}
+
+.card{
+	height: max-content;
+}
+
+.section {
+	margin-top: 8rem;
+}
+
+@media (max-width: 699px) {
+	.section .container {
+		grid-template-columns: 1fr;
+	}
+}

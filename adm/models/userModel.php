@@ -1,26 +1,27 @@
-<?php 
+<?php
 
-class UsersModel {
+    class UsersModel{
+        var $result;
 
-    var $result;
+        public function getUser($login)
+        {
+            require_once('database/ConnectClass.php');
+            $Oconn = new ConnectClass();
+            $Oconn -> openConnect();
+            $conn = $Oconn ->getConn();
 
-    public function getUser($login)
-    {
-        require_once('bd/ConnectClass.php');
-        $Oconn = new ConnectClass();
-        $conn = $Oconn -> create();
+            $sql = "
+                SELECT * FROM users
+                WHERE user = '{$login}'
+            ";
 
-        $sql = "
-            SELECT * FROM users
-            WHERE user = '{$login}' 
-        ";
+            $this -> result = $conn -> query($sql);
+        }
 
-        $this -> result = $conn -> query($sql);
+        public function getConsult()
+        {
+            return $this-> result;
+        }
     }
 
-    public function getConsult()
-    {
-        return $this -> result;
-    }
-}
 ?>

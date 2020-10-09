@@ -1,5 +1,5 @@
 <h1>Lista de Clientes</h1>
-<table class="table">
+<table class="table" style="background-color: white">
     <tr>
         <th>Código</th>
         <th>Nome</th>

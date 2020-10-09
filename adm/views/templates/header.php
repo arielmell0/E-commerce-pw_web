@@ -40,12 +40,16 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="#" class="dropdown-item">Clientes</a>
+                        <a class="nav-link" href="?controller=clients&action=listClients" class="dropdown-item">Clientes</a>
                     </li>
+                    
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="?controller=clients&action=insertClient">Add client</a>
+                    </li>
+
                     <li class="nav-item mr-4">
                         <a class="nav-link" href="?controller=main&action=logout">Logout</a>
                     </li>
-                    
                 </ul>
 
             </div>
