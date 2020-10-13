@@ -5,7 +5,7 @@
         var $conn;
 
         public function openConnect(){
-            $servername = 'localhost:3308';
+            $servername = 'localhost:3306';
             $username = 'root';
             $password = '';
             $dbname = 'pw_exemple';
