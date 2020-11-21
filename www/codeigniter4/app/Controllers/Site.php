@@ -13,7 +13,7 @@ class Site extends Controller{
         $data['title'] = ucfirst($page);
 
         echo view('templates/header.php', $data);
-        echo view('site/'.$page . '.php', $data);
+        echo view('site/' . $page, $data);
         echo view('templates/footer.php', $data);
     }
 }

@@ -9,16 +9,16 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css')?> ">
 
-    <title>Index</title>
+    <title><?=$title?></title>
 
 </head>
 
 <body>
 
     <header class="jumbotron mb-0">
-        <a href="?controller=site&acao=home">
+        <a href="<?=base_url('home')?>">
             <h1>Deselvolvimento web</h1>
         </a>
     </header>
@@ -33,29 +33,29 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
-                <a class="navbar-brand" href="?controller=site&acao=home">
+                <a class="navbar-brand" href="<?=base_url('home')?>">
                     <img src="https://www.pngfind.com/pngs/m/170-1701498_code-png-code-logo-png-transparent-png.png" width="53.97" height="30" alt="code-logo">
                     Web Dev
                 </a>
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link linkpaginaatual" href="?controller=site&acao=home">Home</a>
+                        <a class="nav-link linkpaginaatual" href="<?=base_url('home')?>">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?controller=site&acao=sobre">Sobre</a>
+                        <a class="nav-link" href="<?=base_url('about')?>">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?controller=site&acao=produtos">Produtos e serviços</a>
+                        <a class="nav-link" href="<?=base_url('products')?>">Produtos e serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?controller=site&acao=contato">Formulário de contato</a>
+                        <a class="nav-link" href="<?=base_url('contact')?>">Formulário de contato</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="?controller=clients&action=listclient" class="dropdown-item">Clientes</a>
+                        <a class="nav-link" href="<?=base_url('listClients')?>" class="dropdown-item">Clientes</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="?controller=clients&action=register">Cadastro</a>
+                        <a class="nav-link" href="<?=base_url('register')?>">Cadastro</a>
                     </li>
                 </ul>
 

@@ -22,8 +22,8 @@ class App extends BaseConfig
 	|
 	*/
 	//public $baseURL = 'http://localhost:8080/';
-	public $baseURL = 'http://localhost:8080/pw_ulbra/www/codeigniter4/public';
-
+	public $baseURL = 'http://localhost:8080/';
+    
 	/*
 	|--------------------------------------------------------------------------
 	| Index File
