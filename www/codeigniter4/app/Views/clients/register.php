@@ -64,9 +64,8 @@
             <option value="Python">Python</option>
         </select>
     </div>
-    </div>
 
-    <button class="btn btn-lg btn-success btn-block mt-3" type="submit">Cadastre-se</button>
+    <button class="btn btn-lg btn-success d-flex justify-content-center mt-3" type="submit">Cadastre-se</button>
 
 
 </form>

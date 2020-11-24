@@ -4,13 +4,11 @@
     <tr>
         <th>ID cliente</th>
         <th>Nome</th>
-        <th>Telefone</th>
         <th>Email</th>
-        <th>Endereço</th>
     </tr>
 
     <?php
-    foreach ($arrayClients as $client) {
+    foreach ($clients as $client) {
     ?>
 
         <tr>
@@ -23,17 +21,8 @@
             </td>
 
             <td>
-                <?= $client['phone']?>
-            </td>
-
-            <td>
                 <?= $client['email']?>
             </td>
-
-            <td>
-                <?= $client['address']?>
-            </td>
-
         </tr>
 
     <?php

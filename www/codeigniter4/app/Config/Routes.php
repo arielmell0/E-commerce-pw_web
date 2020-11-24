@@ -35,8 +35,9 @@ $routes->get('/home', 'Site::view/home');
 $routes->get('/about', 'Site::view/about');
 $routes->get('/products', 'Site::view/products');
 $routes->get('/contact', 'Site::view/contact');
-$routes->get('/clients', 'Site::view/clients');
-$routes->get('/register', 'Site::view/register');
+
+$routes->get('/clients', 'Clients::listClients');
+$routes->get('/register', 'Clients::view/register');
 
 /**
  * --------------------------------------------------------------------

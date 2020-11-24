@@ -52,7 +52,7 @@
                         <a class="nav-link" href="<?=base_url('contact')?>">Formulário de contato</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="<?=base_url('listClients')?>" class="dropdown-item">Clientes</a>
+                        <a class="nav-link" href="<?=base_url('clients')?>" class="dropdown-item">Clientes</a>
                     </li>
                     <li>
                         <a class="nav-link" href="<?=base_url('register')?>">Cadastro</a>

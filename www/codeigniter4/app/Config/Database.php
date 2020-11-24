@@ -31,10 +31,10 @@ class Database extends \CodeIgniter\Database\Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => 'localhost',
-		'username' => '',
-		'password' => '',
-		'database' => '',
+		'hostname' => 'localhost:8080',
+		'username' => 'root',
+		'password' => '123',
+		'database' => 'pw_exemple',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
@@ -48,7 +48,7 @@ class Database extends \CodeIgniter\Database\Config
 		'compress' => false,
 		'strictOn' => false,
 		'failover' => [],
-		'port'     => 3306,
+		'port'     => 3307,
 	];
 
 	/**
