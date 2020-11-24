@@ -37,6 +37,7 @@ $routes->get('/products', 'Site::view/products');
 $routes->get('/contact', 'Site::view/contact');
 
 $routes->get('/clients', 'Clients::listClients');
+$routes->get('/clients/(:num)', 'Clients::detailsClient/$1');
 $routes->get('/register', 'Clients::view/register');
 
 /**

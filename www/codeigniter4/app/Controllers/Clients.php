@@ -10,8 +10,7 @@ class Clients extends Controller{
         $clients = new ClientsModel();
         
         $data = [
-            'clients' => $clients -> getClients(),
-            'title' => 'Lista de clientes'
+            'clients' => $clients -> getClients()
             //Mostrar os clientes na tela
         ];
         
@@ -19,6 +18,21 @@ class Clients extends Controller{
         echo view('clients/list', $data);
         echo view('templates/footer');
         
+    }
+
+    public function detailsClient($idClient){
+
+        $clients = new ClientsModel();
+
+        $data = [
+            'client' => $clients -> getClients($idClient)
+            //Mostrar os clientes na tela
+        ];
+        
+        echo view('templates/header');
+        echo view('clients/details', $data);
+        echo view('templates/footer');
+
     }
 
 }

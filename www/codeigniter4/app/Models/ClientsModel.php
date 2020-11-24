@@ -7,7 +7,13 @@ class ClientsModel extends Model{
     protected $table = 'clients';
     protected $primaryKey = 'idClient';
 
-    public function getClients(){
-        return $this -> findAll();
+    public function getClients($idClient = null){
+
+        if($idClient == null):
+            return $this -> findAll();
+        else:
+            return $this -> find($idClient);
+        endif;
+
     }
 }

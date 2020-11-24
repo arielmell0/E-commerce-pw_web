@@ -1,10 +1,13 @@
-<h1 style="text-decoration: black;">Lista de clientes</h1>
+<div class="mb-5" style="background-color: black;">
+    <h1>Lista de clientes</h1>
+</div>
 <table class="table table-striped">
 
     <tr>
         <th>ID cliente</th>
         <th>Nome</th>
         <th>Email</th>
+        <th>Ações</th>
     </tr>
 
     <?php
@@ -23,6 +26,11 @@
             <td>
                 <?= $client['email']?>
             </td>
+
+            <td>
+                <a href="<?=base_url("clients/{$client['idClient']}")?>">Ver detalhes</a>
+            </td>
+
         </tr>
 
     <?php

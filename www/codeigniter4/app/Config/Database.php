@@ -31,7 +31,7 @@ class Database extends \CodeIgniter\Database\Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => 'localhost:8080',
+		'hostname' => 'database',
 		'username' => 'root',
 		'password' => '123',
 		'database' => 'pw_exemple',
@@ -48,7 +48,7 @@ class Database extends \CodeIgniter\Database\Config
 		'compress' => false,
 		'strictOn' => false,
 		'failover' => [],
-		'port'     => 3307,
+		'port'     => 3306,
 	];
 
 	/**
