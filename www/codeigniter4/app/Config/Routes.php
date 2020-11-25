@@ -38,7 +38,12 @@ $routes->get('/contact', 'Site::view/contact');
 
 $routes->get('/clients', 'Clients::listClients');
 $routes->get('/clients/(:num)', 'Clients::detailsClient/$1');
-$routes->get('/register', 'Clients::view/register');
+
+$routes->add('/admin', 'Admin\Admin::index');
+$routes->add('/admin/logout', 'Admin\Admin::logout');
+$routes->add('/admin/login', 'Admin\Admin::login');
+
+$routes->add('/admin/validate-login', 'Admin\Users::validateLogin');
 
 /**
  * --------------------------------------------------------------------

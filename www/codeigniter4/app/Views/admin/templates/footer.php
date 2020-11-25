@@ -5,10 +5,9 @@
 
 <footer class="page-footer font-small blue">
 
-    <div class="footer-copyright text-center py-3">© 2020 Copyright: Desenvolvimento web  <br><br>
-        <a href="<?= base_url('admin') ?>">Área administrativa</a>
+    <div style="color:white;" class="footer-copyright text-center py-3">© 2020 Copyright: 
+        <a style="color:white;" href="../index.php" >Desenvolvimento web</a>
     </div>
-
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
