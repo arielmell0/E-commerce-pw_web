@@ -21,7 +21,7 @@ class Admin extends Controller{
         echo view('admin/users/login');
     }
 
-    public function logou(){
+    public function logout(){
         $session = \Config\Services::session();
         $session->destroy();
         return redirect()->to(base_url('admin'));

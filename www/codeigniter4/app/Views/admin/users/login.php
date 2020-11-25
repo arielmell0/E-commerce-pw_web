@@ -17,7 +17,7 @@
             <div class="col-md-4"></div>
             <div class="col-md-4 p-5">
                 <h1>Login no sistema</h1>
-                <form action="<?=  base_url('admin/validade-login') ?>" method=POST name="formulario" id="formulario">
+                <form action="<?=  base_url('admin/validate-login') ?>" method=POST name="formulario" id="formulario">
                     <div class="form-group">
                         <label></label>
                         <input type="text" class="form-control" name="login" placeholder="Digite o usuário">

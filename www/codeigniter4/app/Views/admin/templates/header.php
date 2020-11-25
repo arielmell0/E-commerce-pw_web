@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="jumbotron mb-0">
-        <a href="../index.php">
+        <a href="<?= base_url('admin') ?>">
             <h1 style="color:black;">Deselvolvimento web</h1>
         </a>
     </header>
@@ -24,17 +24,17 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="../index.php">
+                <a class="navbar-brand" href="<?= base_url('admin') ?>">
                     <img src="https://www.pngfind.com/pngs/m/170-1701498_code-png-code-logo-png-transparent-png.png" width="53.97" height="30" alt="code-logo">
                     Web Dev
                 </a>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="?controller=clients&action=listClients" class="dropdown-item">Clientes</a>
+                        <a class="nav-link" href="<?= base_url('admin/clients') ?>" class="dropdown-item">Clientes</a>
                     </li>
                     
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="?controller=clients&action=insertClient">Add client</a>
+                        <a class="nav-link" href="<?= base_url('admin/clients/new') ?>">Add client</a>
                     </li>
                     <li class="nav-item mr-4">
                         <a class="nav-link" href="<?php base_url('admin/logout') ?>">Logout</a>
