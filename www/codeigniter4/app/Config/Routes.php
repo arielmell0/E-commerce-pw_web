@@ -30,20 +30,31 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+// /site
 $routes->get('/', 'Site::index');
 $routes->get('/home', 'Site::view/home');
 $routes->get('/about', 'Site::view/about');
 $routes->get('/products', 'Site::view/products');
 $routes->get('/contact', 'Site::view/contact');
 
+// /site/clients
 $routes->get('/clients', 'Clients::listClients');
 $routes->get('/clients/(:num)', 'Clients::detailsClient/$1');
 
+// /admin
 $routes->add('/admin', 'Admin\Admin::index');
 $routes->add('/admin/logout', 'Admin\Admin::logout');
 $routes->add('/admin/login', 'Admin\Admin::login');
 
 $routes->add('/admin/validate-login', 'Admin\Users::validateLogin');
+
+// /admin/clients
+$routes->add('admin/clients', 'Admin\Clients::listClients');
+$routes->add('admin/clients/(:num)', 'Admin\Clients::details/$1');
+$routes->add('admin/clients/insert', 'Admin\Clients::insert');
+$routes->add('admin/clients/insert-action', 'Admin\Clients::insertAction');
+$routes->add('admin/clients/update/(:num)', 'Admin\Clients::update/$1');
 
 /**
  * --------------------------------------------------------------------
