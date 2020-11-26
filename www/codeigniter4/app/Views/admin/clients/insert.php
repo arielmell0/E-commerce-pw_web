@@ -1,5 +1,5 @@
-<h1>Insere cliente</h1>
-<form action="" method=POST enctype='multipart/form-data'>
+<h1>Inserir cliente</h1>
+<form action="<?= base_url('admin/clients/insert-action') ?>" method=POST enctype='multipart/form-data'>
     <div class="form-group">
         <div>
             <label for="name">Nome:</label>

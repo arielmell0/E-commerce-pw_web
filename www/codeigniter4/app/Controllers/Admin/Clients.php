@@ -26,7 +26,7 @@ class Clients extends Controller{
         $data = [
             'client' => $clients->getClients($id)
         ];
-        
+
         echo view('admin/templates/header');
         echo view('admin/clients/details', $data);
         echo view('admin/templates/footer');
@@ -44,27 +44,44 @@ class Clients extends Controller{
             'name' => $this -> request -> getVar('name'),
             'email' => $this -> request -> getVar('email'),
             'phone' => $this -> request -> getVar('phone'),
-            'email' => $this -> request -> getVar('email'),
             'address' => $this -> request -> getVar('address')
         ];
+
+        $clients -> insert($data);
+        return redirect() -> route('admin/clients');
     }
 
-    public function update(){
+    public function update($id){
+        $clients = new ClientsModel();
 
+        $data = [
+            'client' => $clients->getClients($id)
+        ];
+
+        echo view('admin/templates/header');
+        echo view('admin/clients/update', $data);
+        echo view('admin/templates/footer');
     }
 
     public function updateAction($id){
+
         $clients = new ClientsModel();
         $data = [
             'name' => $this -> request -> getVar('name'),
             'email' => $this -> request -> getVar('email'),
             'phone' => $this -> request -> getVar('phone'),
-            'email' => $this -> request -> getVar('email'),
             'address' => $this -> request -> getVar('address')
         ];
 
         $clients-> update($id, $data);
-        return redirect() -> to(base_url('admin/clients'));
+        return redirect() -> route('admin/clients');
+    }
+
+    public function delete($id){
+        $clients = new ClientsModel();
+        $clients -> delete($id);
+        return redirect() -> route('admin/clients');
+        
     }
 
 

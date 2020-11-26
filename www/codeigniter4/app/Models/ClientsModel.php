@@ -6,6 +6,9 @@ use CodeIgniter\Model;
 class ClientsModel extends Model{
     protected $table = 'clients';
     protected $primaryKey = 'idClient';
+    protected $allowedFields = [
+        'name', 'email', 'phone', 'address'
+    ];
 
     public function getClients($idClient = null){
 

@@ -50,13 +50,16 @@ $routes->add('/admin/login', 'Admin\Admin::login');
 $routes->add('/admin/validate-login', 'Admin\Users::validateLogin');
 
 // /admin/clients
-$routes->add('admin/clients', 'Admin\Clients::listClients');
-$routes->add('admin/clients/(:num)', 'Admin\Clients::details/$1');
-$routes->add('admin/clients/insert', 'Admin\Clients::insert');
-$routes->add('admin/clients/insert-action', 'Admin\Clients::insertAction');
-$routes->add('admin/clients/update/(:num)', 'Admin\Clients::update/$1');
-$routes->add('admin/clients/update-action/(:num)', 'Admin\Clients::updateAction/$1');
-$routes->add('admin/clients/delete/(:num)', 'Admin\Clients::delete/$1');
+$routes->add('/admin/clients', 'Admin\Clients::listClients');
+$routes->add('/admin/clients/(:num)', 'Admin\Clients::details/$1');
+
+$routes->add('/admin/clients/insert', 'Admin\Clients::insert');
+$routes->add('/admin/clients/insert-action', 'Admin\Clients::insertAction');
+
+$routes->add('/admin/clients/update/(:num)', 'Admin\Clients::update/$1');
+$routes->add('/admin/clients/update-action/(:num)', 'Admin\Clients::updateAction/$1');
+
+$routes->add('/admin/clients/delete/(:num)', 'Admin\Clients::delete/$1');
 
 /**
  * --------------------------------------------------------------------

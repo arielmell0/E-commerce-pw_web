@@ -34,10 +34,10 @@
                     </li>
                     
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="<?= base_url('admin/clients/new') ?>">Add client</a>
+                        <a class="nav-link" href="<?= base_url('admin/clients/insert') ?>">Add client</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="<?php base_url('admin/logout') ?>">Logout</a>
+                        <a class="nav-link" href="<?= base_url('admin/logout') ?>">Logout</a>
                     </li>
                 </ul>
             </div>
