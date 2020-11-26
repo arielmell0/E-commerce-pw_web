@@ -1,17 +1,32 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Admin;
 use CodeIgniter\Controller;
 use App\Models\ClientsModel;
 
-class ClientsModel extends Controller{
+class Clients extends Controller{
+
+    public function listClients(){
+        $clients = new ClientsModel();
+        
+        $data = [
+            'clients' => $clients -> getClients()
+            //Mostrar os clientes na tela
+        ];
+        
+        echo view('admin/templates/header');
+        echo view('admin/clients/list', $data);
+        echo view('admin/templates/footer');
+        
+    }
 
     public function details($id){
         $clients = new ClientsModel();
 
         $data = [
-            'client' => $clients->getClient($id);
+            'client' => $clients->getClients($id)
         ];
+        
         echo view('admin/templates/header');
         echo view('admin/clients/details', $data);
         echo view('admin/templates/footer');
@@ -35,7 +50,7 @@ class ClientsModel extends Controller{
     }
 
     public function update(){
-        
+
     }
 
     public function updateAction($id){

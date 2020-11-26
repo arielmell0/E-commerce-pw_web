@@ -15,7 +15,7 @@
 <body>
     <header class="jumbotron mb-0">
         <a href="<?= base_url('admin') ?>">
-            <h1 style="color:black;">Deselvolvimento web</h1>
+            <h1>Deselvolvimento web</h1>
         </a>
     </header>
     <div class="container ">
