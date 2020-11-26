@@ -1,3 +1,7 @@
+a {
+    color: white;
+}
+
 a:hover {
     color: #00ff00;
 }
