@@ -6,13 +6,15 @@ Home do site             |  Página administrativa (requer login do admin)
 ![Home](www/codeigniter4/public/assets/img/Home.gif)  |  ![CRUD Admin](www/codeigniter4/public/assets/img/Admin.gif)
 
 <h4 align="center"> 
-	Branch master, Projeto em PHP puro :elephant:
+	🚧  CodeIgniter :fire: Projeto em construção...  🚧
 </h4>
 
 ### Features 
 
 - [x] Cadastro de usuário
-- [ ] Cadastro de cliente
+- [x] CRUD de usuários
+- [x] Cadastro de cliente
+- [x] CRUD de clientes
 - [ ] Cadastro de produtos
 
 ### Pré-requisitos
