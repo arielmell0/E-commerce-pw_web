@@ -3,7 +3,7 @@
 
 Home do site             |  Página administrativa (requer login do admin)
 :-------------------------:|:-------------------------:
-![Home](assets/img/Home.gif)  |  ![CRUD Admin](assets/img/Admin.gif)
+![Home](www/codeigniter4/public/assets/img/Home.gif)  |  ![CRUD Admin](www/codeigniter4/public/assets/img/Admin.gif)
 
 <h4 align="center"> 
 	Branch master, Projeto em PHP puro :elephant:
