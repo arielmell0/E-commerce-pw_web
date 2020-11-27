@@ -1,4 +1,23 @@
-## docker codeIgnite
+# pw_web
+## Site desenvolvido na matéria de Programação web (Ulbra-Torres), onde a branch master foi o projeto feito em PHP puro e seguindo os padrões MVC, e a branch CodeIgniter sendo o projeto todo adicionado ao framework PHP CodeIgniter que também utiliza os padrões MVC.
+
+Home do site             |  Página administrativa (requer login do admin)
+:-------------------------:|:-------------------------:
+![Home](assets/img/Home.gif)  |  ![CRUD Admin](assets/img/Admin.gif)
+
+<h4 align="center"> 
+	Branch master, Projeto em PHP puro :elephant:
+</h4>
+
+### Features 
+
+- [x] Cadastro de usuário
+- [ ] Cadastro de cliente
+- [ ] Cadastro de produtos
+
+### Pré-requisitos
+
+#### Docker CodeIgniter
 
 Para conseguir rodar o projeto deve estar instalado o docker e o docker-composer
 **(No windows ja possui tudo na ferramenta docker)**
@@ -57,3 +76,16 @@ docker-compose -f "docker-compose.yml" down
 
 - [Docker](https://www.docker.com/)
 - [Repositorio origim](https://www.docker.com/)
+
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [PHP](https://www.php.net/)
+- [phpMyAdmin](https://www.phpmyadmin.net/)
+- [MySQL](https://www.mysql.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Docker](https://www.docker.com/)
+
+
