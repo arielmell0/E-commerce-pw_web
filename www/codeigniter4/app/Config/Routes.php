@@ -61,6 +61,9 @@ $routes->add('/admin/clients/update-action/(:num)', 'Admin\Clients::updateAction
 
 $routes->add('/admin/clients/delete/(:num)', 'Admin\Clients::delete/$1');
 
+//Api
+$routes->get('/api/clients', 'Api\Clients::listClients');
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing

@@ -8,11 +8,19 @@ class Clients extends Controller{
 
     public function listClients(){
         $clients = new ClientsModel();
-        
-        $data = [
-            'clients' => $clients -> getClients()
-            //Mostrar os clientes na tela
-        ];
+        $search = $this -> request -> getVar();
+
+        if(isset($search['search'])){
+            $data = [
+                'clients' => $clients -> getClientsFor($search['search'])
+                //Mostrar os clientes na tela
+            ];
+        } else {
+            $data = [
+                'clients' => $clients -> getClients()
+                //Mostrar os clientes na tela
+            ];
+        }
         
         echo view('admin/templates/header');
         echo view('admin/clients/list', $data);
@@ -83,7 +91,5 @@ class Clients extends Controller{
         return redirect() -> route('admin/clients');
         
     }
-
-
 
 }
