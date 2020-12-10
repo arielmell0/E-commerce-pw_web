@@ -1,5 +1,5 @@
 # pw_web
-## Site desenvolvido na matéria de Programação web (Ulbra-Torres), onde a branch master foi o projeto feito em PHP puro e seguindo os padrões MVC, e a branch CodeIgniter sendo o projeto todo adicionado ao framework PHP CodeIgniter que também utiliza os padrões MVC.
+## Site desenvolvido na matéria de Programação web (Ulbra-Torres), onde a branch master foi o projeto feito em PHP puro e seguindo os padrões MVC, e a branch CodeIgniter sendo o projeto todo adicionado ao framework PHP CodeIgniter que também utiliza os padrões MVC
 
 Home do site             |  Página administrativa (requer login do admin)
 :-------------------------:|:-------------------------:
