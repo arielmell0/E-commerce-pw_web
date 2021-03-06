@@ -22,7 +22,7 @@ Você precisara de um servidor PHP rodando juntamente com o mySQL, para isso voc
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 ### 🎲 Rodando o Back End (servidor)
-Você iniciara o server que você acabou de baixar e irá aguardar todos os serviços necessários iniciarem, dependendo o servidor que você baixou como o XAMPP você iniciará eles manualmente usando o botão start nos serviços do apache e mySQL.
+Você iniciara o server que você acabou de baixar e irá aguardar todos os serviços necessários iniciarem, dependendo o servidor que você baixou como o XAMPP você iniciará eles manualmente usando o botão start nos serviços do apache e mySQL
 
 O servidor inciará em <http://localhost>.
 Verifique a porta do seu SQL ela deverá ser 3306, caso não seja, você deverá fazer alterações na classe localizado em db. Especificando a porta na linha de código 7, após o localhost:(porta do mySQL). A porta do mySQL pode ser consultada no programa usado para levantar o servidor.
