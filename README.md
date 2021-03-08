@@ -19,7 +19,7 @@ Home do site             |  Página administrativa (requer login do admin)
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 Você precisara de um servidor PHP rodando juntamente com o mySQL, para isso você pode instalar o [WAMP](https://www.wampserver.com/en/), [XAMPP](https://www.apachefriends.org/pt_br/index.html), [MAMP](https://www.mamp.info/en). 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
 ### 🎲 Rodando o Back End (servidor)
 Você iniciara o server que você acabou de baixar e irá aguardar todos os serviços necessários iniciarem, dependendo o servidor que você baixou como o XAMPP você iniciará eles manualmente usando o botão start nos serviços do apache e mySQL
